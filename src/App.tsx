@@ -49,9 +49,7 @@ function App() {
 
   return (
    <div className={'grid place-content-center bg-gray-100  h-full '}>
-       <TableBuilder rowKey={'id'} dataSource={mockData} columns={[TableColumns.documentNumber()]}>
-
-       </TableBuilder>
+       <TableBuilder rowKey={'id'} dataSource={mockData} columns={[TableColumns.documentNumber(),TableColumns.conditionContent()]}></TableBuilder>
    </div>
   )
 }
